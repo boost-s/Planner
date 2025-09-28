@@ -1,0 +1,314 @@
+body {
+    background-color: #3c3c3c;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 22%;
+    background-color: #1c1c1c;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 0px 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sb1text {
+    color: white;
+    text-shadow: 
+        2px 0 black,
+        -2px 0 black,
+        0 2px black,
+        0 -2px black,
+        1px 1px black,
+        -1px -1px black,
+        1px -1px black,
+        -1px 1px black;
+}
+
+.logotext {
+    font-size: 1.5rem;
+    margin-top: 2vh;
+    margin-left: 2.5vh;
+}
+
+.minitext {
+    margin-top: 5vh;
+    margin-left: 2.5vh;
+    font-size: 1.15rem;
+}
+
+.nonamecontainer {
+    flex-direction: row;
+    display: flex;
+}
+
+.addchatBtn {
+    width: 8.5%;
+    height: 4vh;
+    margin-left: 0vh;
+    padding: 0;
+    margin-top: 4.8vh;
+    background-color: transparent;
+    border-style: none;
+    transition: 0.3s all;
+    margin-left: 23vh;
+}
+
+.addBtn-icon {
+    width: 100%;
+}
+
+.addchatBtn:hover {
+    transform: scale(1.03);
+}
+
+.addchatBtn:active {
+    transform: scale(1.01);
+}
+
+.chat-container {
+    width: 90%;
+    height: 60vh;
+    margin-top: 2vh;
+    margin-left: 1.8vh;
+}
+
+.chats {
+    width: 100%;
+    height: 5vh;
+    border: 2px solid #4c4c4c;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    transition: 0.3s all;
+    margin-top: 1vh;
+}
+
+.chats:hover {
+    background-color: #363636;
+}
+
+.chatstext {
+    color: white;
+    text-shadow: 
+        2px 0 black,
+        -2px 0 black,
+        0 2px black,
+        0 -2px black,
+        1px 1px black,
+        -1px -1px black,
+        1px -1px black,
+        -1px 1px black;
+    font-size: 1rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+}
+
+.todolist-container {
+    background-color: #1c1c1c;
+    border: #4c4c4c;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 15px;
+    height: 70vh;
+    width: 50%;
+    margin-top: 13vh;
+    box-shadow: 0 0 2vh 0.5vh rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+}
+
+.cont1text {
+    color: white;
+    text-shadow: 
+        2px 0 black,
+        -2px 0 black,
+        0 2px black,
+        0 -2px black,
+        1px 1px black,
+        -1px -1px black,
+        1px -1px black,
+        -1px 1px black;
+}
+
+
+
+.maintext {
+    font-size: 1.5rem;
+    margin-top: 2vh;
+    margin-left: 4vh;
+}
+
+.todo-input {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    height: 7vh;
+    width: 80%;
+    border-style: unset;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    box-shadow: 0 0 2vh 0.5vh rgba(0, 0, 0, 0.35);
+    margin-left: 3vh;
+    outline: none;
+    transition: 0.3s all;
+    padding-left: 2vh;
+}
+
+.todo-input::placeholder {
+    font-size: 1rem;
+    margin-left: 2vh;
+}
+
+.todo-input:focus {
+    background-color: #e6e6e6;
+}
+
+.inputcont {
+    border-style: none;
+    display: flex;
+    flex: row;
+    height: 7vh;
+    margin-top: 2vh;
+}
+
+.input-sendbtn {
+    height: 7.2vh;
+    border-radius: 15px;
+    width: 11%;
+    margin-left: 2vh;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 2vh 0.5vh rgba(0, 0, 0, 0.35);
+    background-color: white;
+    transition: 0.3s all;
+}
+
+.checkmark-icon {
+    height: 5.5vh;
+    width: 55%;
+}
+
+.input-sendbtn:hover {
+    transform: scale(1.01);
+    background-color: rgb(235, 235, 235);
+}
+
+.input-sendbtn:active {
+    transform: scale(0.99);
+    background-color: rgb(241, 241, 241);
+}
+
+.task-container {
+    height: 50vh;
+    width: 95%;
+    margin-left: 3vh;
+    margin-top: 2.5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    overflow-y: auto;   /* вот это добавь */
+    scrollbar-width: thin; /* тонкий */
+    scrollbar-color: #4c4c4c #1c1c1c; /* ползунок + фон */
+}
+
+.task-block {
+    background-color: white;
+    border-radius: 15px;
+    min-height: 8vh;
+    width: 100%;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    transition: 0.3s all;
+}
+
+.task-text {
+    margin-left: 2vh;
+}
+
+.task-checkbox {
+    margin-left: 2vh;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.delete-btn {
+    margin-left: auto;
+    margin-right: 2vh;
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.2s;
+    text-shadow: 
+        2px 0 black,
+        -2px 0 black,
+        0 2px black,
+        0 -2px black,
+        1px 1px black,
+        -1px -1px black,
+        1px -1px black,
+        -1px 1px black;
+}
+
+.delete-btn:hover {
+    transform: scale(1.05);
+    color: rgb(0, 0, 0);
+}
+
+.widget-bar {
+    height: 100vh;
+    width: 22.5%;
+    background-color: #1c1c1c;
+    position: absolute;
+    left: 165vh;
+    top: 0;
+    border-radius: 10px 0px 0px 10px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #4c4c4c #1c1c1c;
+    padding-top: 1.5vh;
+}
+
+.flatpickr-calendar {
+    font-size: 12px;
+    transform: scale(0.85);
+    transform-origin: top left;
+    border: 4px solid #4c4c4c !important;
+    border-radius: 15px !important;
+    margin-left: 2.65vh;
+    margin-top: 2.3vh;
+}
+
+.weatherwidget-io {
+    border-radius: 10px;
+    transform: scale(0.9);
+    margin-top: -8vh;
+    margin-left: 0.4vh;
+    border: 4px solid #4c4c4c;
+}
+
+.text2main {
+    color: white;
+    text-shadow: 
+        2px 0 black,
+        -2px 0 black,
+        0 2px black,
+        0 -2px black,
+        1px 1px black,
+        -1px -1px black,
+        1px -1px black,
+        -1px 1px black;
+    font-size: 1.5rem;
+    margin-left: 12vh;
+}

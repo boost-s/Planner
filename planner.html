@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="planner_style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <span class="logotext sb1text">Істер тізімі</span>
+        <div class="nonamecontainer"><span class="minitext sb1text">Каналдар</span>
+        <button class="addchatBtn"><img class="addBtn-icon" src="add.png"></button></div>
+        <div class="chat-container">
+            <button class="chat1 chats"><span class="chat1text chatstext">Істер тізімі</span></button>
+        </div>
+    </div>
+
+
+    <div class="todolist-container">
+        <span class="maintext cont1text">Істер тізімі</span>
+
+        <div class="inputcont">
+            <input type="text" class="todo-input" placeholder="Тапсырманы енгізіңіз...">
+            <button class="input-sendbtn"><img class="checkmark-icon" src="galochka-icon.png"></button>
+        </div>
+
+        <div class="task-container"></div>
+
+        <div class="widget-bar">
+
+            <span class="text2main widgetbartext">Виджеттер</span>
+
+            <div id="calendar"></div>
+
+            <script>
+                flatpickr("#calendar", {
+                inline: true, 
+                locale: "kz",     
+                dateFormat: "d.m.Y",
+                defaultDate: "today"
+                });
+            </script>
+
+            <a class="weatherwidget-io"
+                    href="https://forecast7.com/en/51d1671d47/astana/"
+                    data-label_1="ASTANA"
+                    data-label_2="WEATHER"
+                    data-theme="beige">
+                    ASTANA WEATHER
+                </a>
+        </div>
+
+    <script src="planner_script.js"></script>
+
+    <script>
+!function(d,s,id){
+  var js,fjs=d.getElementsByTagName(s)[0];
+  if(!d.getElementById(id)){
+    js=d.createElement(s); js.id=id;
+    js.src='https://weatherwidget.io/js/widget.min.js';
+    fjs.parentNode.insertBefore(js,fjs);
+  }
+}(document,'script','weatherwidget-io-js');
+</script>
+</body>
+</html>
